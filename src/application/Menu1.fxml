@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="emp" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <Label layoutX="246.0" layoutY="14.0" text="Librarie Hajer">
+         <font>
+            <Font name="System Italic" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="b2" layoutY="230.0" mnemonicParsing="false" onAction="#rechercher_livre" prefHeight="100.0" prefWidth="147.0" text="Rechercher livre" />
+      <Button fx:id="b1" layoutY="130.0" mnemonicParsing="false" onAction="#ajouter_livre" prefHeight="100.0" prefWidth="147.0" text="&#10;ajouter livre" />
+      <Button fx:id="b4" layoutY="432.0" mnemonicParsing="false" onAction="#modifier_livre" prefHeight="100.0" prefWidth="147.0" text="Modifier livre" />
+      <Button fx:id="b5" layoutY="532.0" mnemonicParsing="false" onAction="#afficher_livres" prefHeight="100.0" prefWidth="147.0" text="Liste des livres" />
+      <Button fx:id="b3" layoutY="332.0" mnemonicParsing="false" onAction="#supprimer_livre" prefHeight="100.0" prefWidth="147.0" text="Supprimer livre" />
+      <ImageView fitHeight="35.0" fitWidth="80.0" layoutX="36.0" layoutY="145.0">
+         <image>
+            <Image url="@../../../image_projet/téléchargement.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="87.0" layoutX="36.0" layoutY="237.0">
+         <image>
+            <Image url="@../../../image_projet/rech_livre(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="73.0" layoutX="40.0" layoutY="339.0">
+         <image>
+            <Image url="@../../../image_projet/delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="59.0" layoutX="47.0" layoutY="438.0">
+         <image>
+            <Image url="@../../../image_projet/edit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="52.0" layoutX="51.0" layoutY="541.0">
+         <image>
+            <Image url="@../../../image_projet/books.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="b8" layoutX="653.0" layoutY="332.0" mnemonicParsing="false" onAction="#supprimer_personne" prefHeight="100.0" prefWidth="147.0" text="supprimer personne" />
+      <Button fx:id="b7" layoutX="653.0" layoutY="230.0" mnemonicParsing="false" onAction="#rechercher_personne" prefHeight="100.0" prefWidth="147.0" text="rechercher personne" />
+      <Button fx:id="b6" layoutX="653.0" layoutY="130.0" mnemonicParsing="false" onAction="#ajouter_personne" prefHeight="100.0" prefWidth="147.0" text="ajouter peronne" />
+      <Button fx:id="b9" layoutX="653.0" layoutY="432.0" mnemonicParsing="false" onAction="#modifier_personne" prefHeight="100.0" prefWidth="147.0" text="modifier personne" />
+      <Button fx:id="b10" layoutX="653.0" layoutY="532.0" mnemonicParsing="false" onAction="#afficher_personne" prefHeight="100.0" prefWidth="147.0" text="liste des personnes" />
+      <ImageView fitHeight="28.0" fitWidth="59.0" layoutX="697.0" layoutY="145.0">
+         <image>
+            <Image url="@../../../image_projet/register.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="708.0" layoutY="237.0">
+         <image>
+            <Image url="@../../../image_projet/search.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="59.0" layoutX="697.0" layoutY="339.0">
+         <image>
+            <Image url="@../../../image_projet/deleteppng.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="37.0" layoutX="708.0" layoutY="442.0">
+         <image>
+            <Image url="@../../../image_projet/editp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="708.0" layoutY="541.0">
+         <image>
+            <Image url="@../../../image_projet/persons.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="id_livre" layoutX="227.0" layoutY="232.0" prefHeight="80.0" prefWidth="319.0" promptText="ID Livre" />
+      <TextField fx:id="id_personne" layoutX="228.0" layoutY="367.0" prefHeight="80.0" prefWidth="319.0" promptText="ID Personne" />
+      <Button fx:id="b11" layoutX="317.0" layoutY="502.0" mnemonicParsing="false" onAction="#emprunter" prefHeight="46.0" prefWidth="122.0" text="emprunter" />
+      <DatePicker fx:id="date" layoutX="269.0" layoutY="108.0" />
+   </children>
+</AnchorPane>

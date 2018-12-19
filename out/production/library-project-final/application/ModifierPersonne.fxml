@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root prefHeight="600.0" prefWidth="800.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModifierPersonneController">
+   <children>
+      <Label fx:id="l1" layoutX="14.0" layoutY="21.0" text="Modifier Personne de id :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="349.0" layoutY="23.0" prefHeight="31.0" prefWidth="187.0" promptText="NumPersonne" />
+      <Label fx:id="l2" layoutX="14.0" layoutY="73.0" text="Saisir les nouvelles informations :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t2" layoutX="349.0" layoutY="83.0" promptText="Prenom" />
+      <TextField fx:id="t3" layoutX="349.0" layoutY="121.0" promptText="Nom" />
+      <TextField fx:id="t4" layoutX="349.0" layoutY="162.0" promptText="Adresse" />
+      <TextField fx:id="t5" layoutX="349.0" layoutY="203.0" prefHeight="31.0" prefWidth="187.0" promptText="Telephone" />
+      <Label layoutX="334.0" layoutY="283.0" text="Personne modifié">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="Tabmodif" layoutX="329.0" layoutY="328.0" prefHeight="267.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="112.0" text="NumPersonne" />
+          <TableColumn fx:id="c2" prefWidth="77.0" text="Prenom" />
+            <TableColumn fx:id="c3" prefWidth="71.0" text="Nom" />
+            <TableColumn fx:id="c4" prefWidth="87.0" text="Adresse" />
+            <TableColumn fx:id="c5" prefWidth="113.0" text="Telephone" />
+        </columns>
+      </TableView>
+      <Button fx:id="b1" layoutX="71.0" layoutY="328.0" mnemonicParsing="false" onAction="#modifier_personne" prefHeight="80.0" prefWidth="100.0" text="Modifier" />
+      <Button fx:id="b2" layoutX="71.0" layoutY="422.0" mnemonicParsing="false" onAction="#afficher_personne" prefHeight="80.0" prefWidth="100.0" text="Afficher" />
+      <Button fx:id="b3" layoutX="71.0" layoutY="513.0" mnemonicParsing="false" onAction="#quitter" prefHeight="80.0" prefWidth="100.0" text="Quitter" />
+   </children>
+</fx:root>

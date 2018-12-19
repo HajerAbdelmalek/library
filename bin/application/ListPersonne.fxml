@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListPersonneController">
+   <children>
+      <Button fx:id="b1" layoutX="99.0" layoutY="65.0" mnemonicParsing="false" onAction="#afficher_personne" prefHeight="80.0" prefWidth="200.0" text="Afficher" />
+      <Button fx:id="b2" layoutX="457.0" layoutY="65.0" mnemonicParsing="false" onAction="#quitter" prefHeight="80.0" prefWidth="200.0" text="Quitter" />
+      <TableView fx:id="TabPers" layoutX="10.0" layoutY="176.0" prefHeight="411.0" prefWidth="768.0">
+        <columns>
+          <TableColumn fx:id="c1" prefWidth="127.0" text="NumPersonne" />
+          <TableColumn fx:id="c2" prefWidth="146.0" text="Prenom" />
+            <TableColumn fx:id="c3" prefWidth="164.0" text="Nom" />
+            <TableColumn fx:id="c4" prefWidth="173.0" text="Adresse" />
+            <TableColumn fx:id="c5" prefWidth="157.0" text="Telephone" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

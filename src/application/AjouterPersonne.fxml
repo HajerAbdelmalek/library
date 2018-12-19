@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.AjouterPersonneController">
+   <children>
+      <Label fx:id="l1" layoutX="229.0" layoutY="30.0" text="Ajout du Personne " AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="232.0" layoutY="108.0" prefHeight="50.0" prefWidth="300.0" promptText="NumPersonne" />
+      <TextField fx:id="t2" layoutX="232.0" layoutY="176.0" prefHeight="50.0" prefWidth="300.0" promptText="Prenom" />
+      <TextField fx:id="t3" layoutX="232.0" layoutY="250.0" prefHeight="50.0" prefWidth="300.0" promptText="Nom" />
+      <TextField fx:id="t5" layoutX="232.0" layoutY="397.0" prefHeight="50.0" prefWidth="300.0" promptText="Telephone" />
+      <TextField fx:id="t4" layoutX="229.0" layoutY="323.0" prefHeight="50.0" prefWidth="300.0" promptText="Adresse" />
+      <Button fx:id="b1" layoutX="164.0" layoutY="495.0" mnemonicParsing="false" onAction="#ajouter_personne" prefHeight="40.0" prefWidth="155.0" text="Sauvgarder" />
+      <Button fx:id="b2" layoutX="455.0" layoutY="495.0" mnemonicParsing="false" onAction="#quitter" prefHeight="40.0" prefWidth="155.0" text="Quitter" />
+   </children>
+</AnchorPane>

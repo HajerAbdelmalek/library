@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.SupprimerPersonneController">
+   <children>
+      <Label fx:id="l1" layoutX="24.0" layoutY="128.0" prefHeight="53.0" prefWidth="259.0" text="Supprimer par:">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="386.0" layoutY="130.0" prefHeight="48.0" prefWidth="270.0" promptText="NumPersonne" />
+      <Button fx:id="b1" layoutX="53.0" layoutY="359.0" mnemonicParsing="false" onAction="#supprimer_personne" prefHeight="70.0" prefWidth="200.0" text="Supprimer" />
+      <Button fx:id="b2" layoutX="300.0" layoutY="359.0" mnemonicParsing="false" onAction="#afficher_personne" prefHeight="70.0" prefWidth="200.0" text="Afficher" />
+      <Button fx:id="b3" layoutX="556.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitter" prefHeight="70.0" prefWidth="200.0" text="Quitter" />
+   </children>
+</AnchorPane>

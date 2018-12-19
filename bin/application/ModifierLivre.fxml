@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ModifierLivreController">
+   <children>
+      <Label fx:id="lab" layoutX="19.0" prefHeight="57.0" prefWidth="188.0" text="Modifier Livre de id :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id" layoutX="363.0" layoutY="6.0" prefHeight="31.0" prefWidth="187.0" promptText="NumLivre" />
+      <Button fx:id="b1" layoutX="63.0" layoutY="292.0" mnemonicParsing="false" onAction="#Modifier_livre" prefHeight="80.0" prefWidth="100.0" text="Modifier" />
+      <Button fx:id="b3" layoutX="63.0" layoutY="485.0" mnemonicParsing="false" onAction="#quitter" prefHeight="80.0" prefWidth="100.0" text="Quitter" />
+      <TableView fx:id="tabmodif" layoutX="207.0" layoutY="294.0" prefHeight="273.0" prefWidth="568.0">
+        <columns>
+          <TableColumn fx:id="num" prefWidth="109.0" text="NumLivre" />
+          <TableColumn fx:id="titre" prefWidth="106.0" text="Titre" />
+            <TableColumn fx:id="auteur" prefWidth="110.0" text="Auteur" />
+            <TableColumn fx:id="etat" prefWidth="115.0" text="Etat" />
+            <TableColumn fx:id="categ" prefWidth="127.0" text="Categorie" />
+        </columns>
+      </TableView>
+      <Button fx:id="b2" layoutX="63.0" layoutY="386.0" mnemonicParsing="false" onAction="#afficher" prefHeight="80.0" prefWidth="100.0" text="Afficher" />
+      <Label fx:id="lab2" layoutX="207.0" layoutY="238.0" text="Liste modifiée :">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lab1" layoutX="14.0" layoutY="66.0" text="Saisir les nouvelles informations">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t1" layoutX="363.0" layoutY="64.0" promptText="Titre" />
+      <TextField fx:id="t2" layoutX="363.0" layoutY="105.0" promptText="Auteur" />
+      <TextField fx:id="t3" layoutX="363.0" layoutY="148.0" promptText="Etat" />
+      <TextField fx:id="t4" layoutX="363.0" layoutY="191.0" promptText="Categorie" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TableLivreAffichController">
+   <children>
+      <Button fx:id="b1" layoutX="148.0" layoutY="65.0" mnemonicParsing="false" onAction="#afficher" prefHeight="69.0" prefWidth="197.0" text="Aficher" />
+      <Button fx:id="b2" layoutX="428.0" layoutY="65.0" mnemonicParsing="false" onAction="#quitter" prefHeight="69.0" prefWidth="197.0" text="Quitter" />
+      <TableView fx:id="TabLivre" layoutX="83.0" layoutY="205.0" onSort="#afficher" prefHeight="212.0" prefWidth="625.0">
+        <columns>
+          <TableColumn fx:id="number" prefWidth="75.0" text="NumLivre" />
+          <TableColumn fx:id="title" prefWidth="141.0" text="Titre" />
+            <TableColumn fx:id="author" prefWidth="122.0" text="Auteur" />
+            <TableColumn fx:id="avail" prefWidth="135.0" text="Etat" />
+            <TableColumn fx:id="categ" prefWidth="146.0" text="Categorie" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
